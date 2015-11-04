@@ -1,5 +1,11 @@
 ![alt text](https://raw.githubusercontent.com/chrisbanes/cheesesquare/master/art/icon.png)
 
+This is my customized sample project of the original one at https://github.com/chrisbanes/cheesesquare
+
+For the issue "RecyclerView direct inside NestedScrollView" posted at  http://stackoverflow.com/questions/33330388/how-to-put-recycelerview-inside-nestedscrollview
+
+Thankyou!
+
 Cheesesquare Sample
 ===================================
 
