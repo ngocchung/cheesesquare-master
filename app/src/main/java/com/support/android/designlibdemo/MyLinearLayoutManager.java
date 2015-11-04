@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 
 public class MyLinearLayoutManager extends LinearLayoutManager {
 
-    public MyLinearLayoutManager(Context context, int orientation, boolean reverseLayout)    {
+    public MyLinearLayoutManager(Context context, int orientation, boolean reverseLayout) {
         super(context, orientation, reverseLayout);
     }
 
@@ -24,8 +24,7 @@ public class MyLinearLayoutManager extends LinearLayoutManager {
         int width = 0;
         int height = 0;
         for (int i = 0; i < getItemCount(); i++) {
-
-
+            
             if (getOrientation() == HORIZONTAL) {
 
                 measureScrapChild(recycler, i,
