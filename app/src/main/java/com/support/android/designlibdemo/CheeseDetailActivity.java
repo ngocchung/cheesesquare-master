@@ -51,11 +51,17 @@ public class CheeseDetailActivity extends AppCompatActivity {
         loadBackdrop();
 
 
-        RecyclerView rv = (RecyclerView)findViewById(R.id.rv);
-        LinearLayoutManager llm = new LinearLayoutManager(this);
-        rv.setLayoutManager(llm);
+        final RecyclerView rv = (RecyclerView)findViewById(R.id.rv);
+        final LinearLayoutManager llm = new LinearLayoutManager(this);
+        // rv.setLayoutManager(llm);
+        //rv.setMinimumHeight(LinearLayout.LayoutParams.WRAP_CONTENT);
+        //rv.setLayoutManager(new CustomLinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, true));
+        rv.setLayoutManager(new MyLinearLayoutManager(this, LinearLayoutManager.VERTICAL, true));
         RVAdapter adapter = new RVAdapter();
         rv.setAdapter(adapter);
+//        rv.setLayoutManager(new WrappingLinearLayoutManager(this));
+//        rv.setNestedScrollingEnabled(false);
+//        rv.setHasFixedSize(false);
     }
 
     private void loadBackdrop() {
